@@ -1,9 +1,11 @@
 'use strict';
 
+const long = 10;
 
-var long = 10;
 var Utils = require(__dirname+'/lib/Utils');
 var Arrays = Utils.prototype.Arrays(); // llamamos a función estática de Utils que nos devuelve la clase Arrays
+
+
 var ua = new Arrays(long); // llamamos a clase hija de Utils para arrays
 var randomData = ua.getRandom(); // array de 10 els random
 console.log(randomData);
